@@ -1,45 +1,84 @@
-* {
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+/* Header */
+header {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
   padding: 20px;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 20px;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
-h1 {
-  font-size: 36px;
-  color: #333;
+/* Syllabus Section */
+#syllabus {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  width: 80%;
 }
 
-.syllabus, .professor {
-  margin-bottom: 30px;
+#syllabus h2 {
+  color: #2c3e50;
 }
 
-.syllabus h2, .professor h2 {
-  color: #0056b3;
-}
-
-ul {
+#syllabus ul {
   list-style-type: none;
+  padding: 0;
 }
 
-li {
-  margin-bottom: 10px;
+#syllabus li {
+  padding: 5px;
+  font-size: 1.1rem;
+  color: #34495e;
 }
 
+/* Professor Details Section */
+#professor-details {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  width: 80%;
+}
+
+#professor-details h2 {
+  color: #2c3e50;
+}
+
+#professor-details p {
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+#professor-details a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+#professor-details a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
+  background-color: #2c3e50;
+  color: white;
   text-align: center;
-  margin-top: 30px;
-  font-size: 14px;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-
 

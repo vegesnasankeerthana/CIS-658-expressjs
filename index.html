@@ -3,35 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Architecture Syllabus</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Web Architecture - Syllabus and Professor Details</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <header>
-        <h1>Web Architecture Syllabus</h1>
-    </header>
-    
-    <section class="content">
-        <h2>Course Overview</h2>
-        <p>This course covers fundamental concepts of web architecture, including client-server models, APIs, cloud computing, and security principles.</p>
+    <div class="container">
+        <header>
+            <h1>Web Architecture Course</h1>
+        </header>
 
-        <h3>Topics Covered:</h3>
-        <ul>
-            <li>Introduction to Web Architecture</li>
-            <li>HTTP & HTTPS Protocols</li>
-            <li>RESTful APIs</li>
-            <li>Frontend & Backend Technologies</li>
-            <li>Database Integration</li>
-            <li>Security & Authentication</li>
-            <li>Cloud & Deployment Strategies</li>
-        </ul>
+        <section class="professor-details">
+            <h2>Professor Details</h2>
+            <p><strong>Name:Zachery</strong> <%= professor.name %></p>
+            <p><strong>Department:ACS</strong> <%= professor.department %></p>
+            <p><strong>Email:kurmasz@gvsu.edu</strong> <%= professor.email %></p>
+        </section>
 
-        <h2>Professor Details</h2>
-        <p><strong>Dr. John Doe</strong><br>
-        Email: johndoe@university.edu<br>
-        Office Hours: Mon & Wed, 2 PM - 4 PM</p>
-    </section>
+        <section class="syllabus">
+            <h2>Course Syllabus</h2>
+            <ul>
+                <% syllabus.forEach(function(item) { %>
+                    <li><strong>Week <%= item.week %>:</strong> <%= item.topic %></li>
+                <% }) %>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
-
 

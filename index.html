@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Architecture - Syllabus and Professor Details</title>
-    <link rel="stylesheet" href="/styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Architecture Syllabus</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Web Architecture Course</h1>
-        </header>
-
-        <section class="professor-details">
-            <h2>Professor Details</h2>
-            <p><strong>Name:Zachery</strong> <%= professor.name %></p>
-            <p><strong>Department:ACS</strong> <%= professor.department %></p>
-            <p><strong>Email:kurmasz@gvsu.edu</strong> <%= professor.email %></p>
-        </section>
-
-        <section class="syllabus">
-            <h2>Course Syllabus</h2>
-            <ul>
-                <% syllabus.forEach(function(item) { %>
-                    <li><strong>Week <%= item.week %>:</strong> <%= item.topic %></li>
-                <% }) %>
-            </ul>
-        </section>
-    </div>
+  <header>
+    <h1>Web Architecture Syllabus</h1>
+  </header>
+  <section class="syllabus">
+    <h2>Course Syllabus</h2>
+    <ul>
+      <li><strong>Week 1:</strong> Introduction to Web Architecture</li>
+      <li><strong>Week 2:</strong> Web Servers and Protocols</li>
+      <li><strong>Week 3:</strong> Client-Server Architecture</li>
+      <li><strong>Week 4:</strong> Web Frameworks</li>
+      <li><strong>Week 5:</strong> Database Architecture</li>
+      <li><strong>Week 6:</strong> Security in Web Architecture</li>
+      <li><strong>Week 7:</strong> Cloud-Based Architecture</li>
+      <li><strong>Week 8:</strong> Scalable Web Systems</li>
+    </ul>
+  </section>
+  <section class="professor">
+    <h2>Professor Details</h2>
+    <p><strong>Name:</strong> Dr. John Doe</p>
+    <p><strong>Email:</strong> johndoe@example.com</p>
+    <p><strong>Office Hours:</strong> Monday & Wednesday, 10:00 AM - 12:00 PM</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Web Architecture Course</p>
+  </footer>
 </body>
 </html>
+
 
